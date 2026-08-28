@@ -1,0 +1,27 @@
+h1 {
+  text-align: center;
+  margin: 30px;
+}
+
+.produto {
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.produto img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.produto h2 {
+  font-size: 20px;
+}
+
+.produto p {
+  margin: 8px 0;
+}

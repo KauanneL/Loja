@@ -1,9 +1,23 @@
-<h1>Produtos</h1>
+<h1>Lista de Produtos</h1>
 
-@for (produto of produtos; track $index) {
-  <div>
+<p>Quantidade de produtos: {{ produtos.length }}</p>
+
+@for (produto of produtos; track produto.id) {
+
+  <div class="produto">
+
+    <img [src]="produto.foto" [alt]="produto.nome">
+
     <h2>{{ produto.nome }}</h2>
-    <p>marca: {{ produto.marca }}</p>
-    <p>preço: {{ produto.preco }}</p>
+
+    <p><strong>Marca:</strong> {{ produto.marca }}</p>
+
+    <p>{{ produto['descrição'] }}</p>
+
+    <p><strong>Preço:</strong> R$ {{ produto['preço'] }}</p>
+
+    <p><strong>Quantidade:</strong> {{ produto.quantidade }}</p>
+
   </div>
+
 }
